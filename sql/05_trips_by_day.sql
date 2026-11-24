@@ -20,5 +20,5 @@ SELECT
     FORMAT_DATE('%A', DATE(starttime)) AS day_name, -- Converts the date into weekday name
     COUNT(*) AS total_trips
 FROM `bigquery-public-data.new_york.citibike_trips`
-GROUP BY day_number, day_name  --Groups al trips by day
+GROUP BY day_number, day_name  --Groups all trips by day
 ORDER BY total_trips DESC; --Ranks the busiest days first 
