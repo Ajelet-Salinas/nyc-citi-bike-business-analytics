@@ -28,4 +28,4 @@ SELECT
     ) AS percentage_of_trips
 FROM `bigquery-public-data.new_york.citibike_trips`
 GROUP BY usertype  --Group by customer categories 
-ORDER BY total_trips DESC; --Rank them from msot trips to fewest
+ORDER BY total_trips DESC; --Rank them from most trips to fewest
